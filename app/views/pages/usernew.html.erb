@@ -1,0 +1,19 @@
+<%= simple_form_for :customer, :url => customers_path,  html: {class: "form-signin"} do |f| %>
+  
+
+        <%= f.input :email, required: true, autofocus: true, label: false, placeholder: "Email", input_html: {class: "form-control"} %>
+
+       <%= f.input :first_name, required: true, autofocus: true, label: false, placeholder: "First Name", input_html: {class: "form-control"} %>
+   
+        <%= f.input :last_name, required: true, autofocus: true, label: false, placeholder: "Surname", input_html: {class: "form-control"} %>
+
+           <%= f.input :month, required: true, autofocus: true, label: false, placeholder: "Birth Month", input_html: {class: "form-control"} %>
+
+ 
+   <%= f.button :submit, "Sign up", class: "btn btn-primary btn-block" %>
+   <%= notice %>
+
+  <% end %>
+
+
+

@@ -7,7 +7,10 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :users
+  resources :newsletters
+  resources :customers
+  devise_for :users, :controllers => { :registrations => "registrations" }, :path_prefix => 'my' 
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,7 +18,9 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get 'about' => "pages#about"
-  get 'test' => "pages#test"
+  get 'usernew' => "pages#usernew"
+  get 'booking' => "pages#booking"
+  get 'new' => "pages#new"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

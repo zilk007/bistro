@@ -1,0 +1,17 @@
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="row">
+	
+	<%= link_to edit_newsletter_path(newsletter) do %>
+  <b>&nbsp;Edit</b> |
+	<% end %>
+
+  <%= link_to '<b>Show</b>'.html_safe, newsletter_path(newsletter) %> 
+  	<%= link_to "X&nbsp;".html_safe, newsletter_path(newsletter), method: :delete, data: {confirm: "Are you sure?"}, class: "pull-right" %>
+
+  	 <pre>Template (<%= newsletter.template %>) >> created <%= time_ago_in_words(newsletter.created_at) %> ago</pre>
+	</div>
+
+</div>
+</div>
+<div class="row"></div>

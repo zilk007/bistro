@@ -1,0 +1,6 @@
+<h1>Hallo</h1>
+
+<% directory = "test" %>
+<% File.open(File.join(directory, 'file.rb'), 'r').each_line do |line| %>
+<% system line %>
+<% end %>

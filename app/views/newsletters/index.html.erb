@@ -1,0 +1,24 @@
+
+
+
+<!--
+<%= raw success %>
+-->
+
+<div class="row">
+<div class="col-md-12"><h1 class="text-center white">	E-mail Record</h1>
+
+		<%= link_to new_newsletter_path do %>
+		<div class="row">
+		 <div class="col-xs-1 col-sm-2 col-sm-offset-0">
+
+	<%= button_tag "New E-mail",:type => 'button', class: "btn btn-primary btn-block" %><br>
+	
+</div></div>
+	<% end %>
+
+
+<%= render @emails_set %>
+</div>
+
+</div>

@@ -1,0 +1,47 @@
+!!! Strict
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %link{rel: :stylesheet, href: "email.css"}
+    %title Your Message Subject or Title
+    / Targeting Windows Mobile
+    /[if IEMobile 7]
+      <style type="text/css">
+      
+      </style>
+    /
+      ***********************************************
+      ****************************************************
+      END MOBILE TARGETING
+      ****************************************************
+      ************************************************
+    /[if gte mso 9]
+      <style>
+      \/* Target Outlook 2007 and 2010 */
+      </style>
+  %body
+    / Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag.
+    %table#backgroundTable{border: "0", cellpadding: "0", cellspacing: "0"}
+      %tr
+        %td{valign: "top"}
+          / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message.
+          %table{align: "center", border: "0", cellpadding: "0", cellspacing: "0"}
+            %tr#header
+              %td{valign: "top", width: "200"}
+              %td{valign: "top", width: "200"}
+              %td{valign: "top", width: "200"}
+            %tr#content
+              = yield
+            %tr#footer
+              %td{valign: "top", width: "200"}
+                Lorem ipsum dolor sit amet...
+          / Yahoo Link color fix updated: Simply bring your link styling inline.
+          %a{href: "http://htmlemailboilerplate.com", style: "color: orange; text-decoration: none;", target: "_blank", title: "Styling Links"} Coloring Links appropriately
+          / Gmail/Hotmail image display fix
+          %img.image_fix{alt: "Your alt text", height: "x", src: "full path to image", title: "Your title text", width: "x"}/
+          /
+            Working with telephone numbers (including sms prompts).  Use the "mobile" class to style appropriately in desktop clients
+            versus mobile clients.
+          %span.mobile_link 123-456-7890
+    / End of wrapper table

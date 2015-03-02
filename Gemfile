@@ -33,6 +33,7 @@ group :production do
 	gem 'pg'
 end
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,10 +45,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :mingw]
 
-gem 'bootstrap-sass', '~> 3.3.1'
-
-gem 'autoprefixer-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 gem 'font-awesome-rails'
 
@@ -56,3 +56,26 @@ gem 'simple_form'
 gem 'devise'
 
 gem "auto_html"
+
+gem 'rename'
+
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+
+gem 'rufus-scheduler'
+
+gem 'delayed_job_active_record'
+
+gem 'clockwork'
+
+ gem 'formtastic'
+
+ gem 'inherited_resources'
+
+ gem 'roadie'
+ gem 'roadie-rails'
+ gem 'coffee-script-source', '1.8.0'
+
+ gem 'tinymce-rails'
+ gem 'validates_email_format_of'
