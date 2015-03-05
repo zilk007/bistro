@@ -14,7 +14,7 @@ def index
 	end
 
 	def show
-    redirect_to booking_path, success: @newsletter.name
+    redirect_to booking_path, success: @newsletter.code
 		#respond_with(@newsletter)
 	end
 
@@ -62,7 +62,7 @@ end
 
 
         def newsletter_params
-       	params.require(:newsletter).permit(:name, :template)
+       	params.require(:newsletter).permit(:code, :template)
 end 
 
 
