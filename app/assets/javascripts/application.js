@@ -15,7 +15,6 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require tinymce-jquery
 //= require redactor-rails
 //= require redactor-rails/plugins
 //= require_tree .

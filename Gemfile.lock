@@ -230,8 +230,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    tinymce-rails (4.1.6)
-      railties (>= 3.1.1)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -278,7 +276,6 @@ DEPENDENCIES
   simple_form
   spring
   sqlite3
-  tinymce-rails
   turbolinks
   twitter-bootstrap-rails!
   tzinfo-data
