@@ -76,8 +76,6 @@ gem 'clockwork'
  gem 'roadie'
  gem 'roadie-rails'
  gem 'coffee-script-source', '1.8.0'
-
- gem 'tinymce-rails'
  gem 'validates_email_format_of'
 
  gem 'redactor-rails'
