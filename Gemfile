@@ -79,3 +79,5 @@ gem 'clockwork'
 
  gem 'tinymce-rails'
  gem 'validates_email_format_of'
+
+ gem 'redactor-rails'

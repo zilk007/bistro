@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  mount RedactorRails::Engine => '/redactor_rails'
   resources :tasks do
     member do
       put :change
