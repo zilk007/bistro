@@ -1,0 +1,38 @@
+/* line 1, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* line 7, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 10, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+/* line 13, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 22, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/* line 25, c:/Sites/config/bistro/app/assets/stylesheets/devise.css.scss */
+.form-signin input {
+  margin-bottom: 10px;
+}
