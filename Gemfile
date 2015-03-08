@@ -81,3 +81,5 @@ gem 'clockwork'
  gem 'validates_email_format_of'
 
  gem 'redactor-rails'
+ gem "carrierwave"
+ gem "mini_magick"
