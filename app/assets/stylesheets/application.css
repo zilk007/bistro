@@ -11,6 +11,5 @@
  *= require_self
  *= require font-awesome
  *= require redactor-rails
- *= redactor-rails/plugins
  *= require_tree .
  */
