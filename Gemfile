@@ -31,6 +31,7 @@ end
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
+	gem 'puma'
 end
 
 
@@ -81,4 +82,3 @@ gem 'clockwork'
  gem 'redactor-rails'
  gem "carrierwave"
  gem "mini_magick"
- gem "puma"
