@@ -81,3 +81,4 @@ gem 'clockwork'
  gem 'redactor-rails'
  gem "carrierwave"
  gem "mini_magick"
+ gem "puma"
