@@ -9,7 +9,7 @@
 <!-- OF COURSE YOU NEED TO ADAPT ACTION TO WHAT PAGE YOU WANT TO LOAD WHEN HITTING "SAVE" -->
 <%= simple_form_for Newsletter.new, :url => newsletters_path  do |f| %>
 
-<%= text_area_tag :code, "", :class => "redactor", :rows => 40, :cols => 120 %>
+<%= f.cktext_area :code, :class => 'someclass', :ckeditor => {:language => 'uk'} %>
 <% end %>
 
 </body>
