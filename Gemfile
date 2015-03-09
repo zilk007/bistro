@@ -78,7 +78,3 @@ gem 'clockwork'
  gem 'roadie-rails'
  gem 'coffee-script-source', '1.8.0'
  gem 'validates_email_format_of'
-
- gem 'redactor-rails'
- gem "carrierwave"
- gem "mini_magick"
